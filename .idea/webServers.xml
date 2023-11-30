@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="62312635-b0ac-41de-bca4-c7963744337b" name="digitalog" url="http://digitalog.devcraft.kr">
+        <fileTransfer rootFolder="/var/www/digitalog" accessType="SFTP" host="devcraft.kr" port="22" sshConfigId="9b933a07-bdcd-4099-bc24-cc2a157902a8" sshConfig="root@devcraft.kr:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
