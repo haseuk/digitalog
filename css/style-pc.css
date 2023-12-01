@@ -762,6 +762,9 @@
     margin-top: 0px;
     border-radius: 5px;
   }
+  .container .wrap section.marketing {
+    padding-bottom: 0px;
+  }
   .container .wrap section.marketing article.top {
     padding-top: 80px;
     padding-right: 40px;
