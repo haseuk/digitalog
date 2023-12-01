@@ -2,9 +2,11 @@
 let winW;
 function updateSize() {
   winW = window.innerWidth;
+  winResizeGnbClose();
 }
-updateSize();
+
 window.addEventListener("resize", updateSize);
+
 
 //height vh calc
 let vh = window.innerHeight * 0.01;
@@ -29,6 +31,15 @@ gnbOpenBtn.addEventListener('click', function() {
     body.style.overflow = 'hidden';
   }
 })
+
+//gnb close
+let gnbList = document.querySelectorAll('.gnb-wrap ul li');
+function winResizeGnbClose() {
+  header.classList.remove('on');
+  for (let i = 0; i < gnbList.length; i++) {
+    gnbList[i].classList.remove('on')
+  }
+}
 
 //gnb menu button click
 let gnbMenuBtns = document.querySelectorAll('.depth-btn');
@@ -73,20 +84,17 @@ function handleScroll() {
   initIntersectionObserver();
 }
 
-
-
 window.onload = function() {
   updateSize();
   scrollDir();
   initIntersectionObserver();
 }
 
-
 //footer languages popup
 let langChangBtn = document.querySelector('.change-btn');
 let langPopup = document.querySelector('.lang-pop');
 let footer = document.querySelector('footer');
-langChangBtn.addEventListener('click', function() {
+if(langChangBtn)langChangBtn.addEventListener('click', function() {
   langPopup.classList.add('on');
   footer.classList.add('on');
 });
@@ -95,10 +103,12 @@ langChangBtn.addEventListener('click', function() {
 //popup close
 let popup = document.querySelectorAll('.popup');
 let popupClose = document.querySelector('.popup .close');
-popupClose.addEventListener('click', function() {
+if(popupClose)popupClose.addEventListener('click', function() {
   for (let i = 0; i < popup.length; i++) {
     popup[i].classList.remove('on');
   }
   footer.classList.remove('on');
 })
 //popup close ----
+
+updateSize();

@@ -36,7 +36,7 @@
     overflow: hidden;
   }
   .container .wrap header {
-    height: 74px;
+    height: 83px;
     position: fixed;
     left: 50%;
     top: 0px;
@@ -59,7 +59,7 @@
   }
   .container .wrap header .header-wrap .header-inner {
     box-shadow: none;
-    height: 74px;
+    height: 83px;
     position: relative;
     left: auto;
     top: auto;
@@ -67,7 +67,7 @@
   }
   .container .wrap header .header-wrap .header-inner h1 {
     width: 95px;
-    height: 72px;
+    height: 83px;
   }
   .container .wrap header .header-wrap .header-inner h1:after {
     content: '';
@@ -127,7 +127,7 @@
     display: block;
     position: absolute;
     left: 0px;
-    top: 49px;
+    top: 56px;
     right: auto;
     bottom: auto;
     padding-top: 14px;
@@ -187,7 +187,7 @@
     border-radius: 8px;
     vertical-align: middle;
     position: absolute;
-    top: 16px;
+    top: 20px;
   }
   .container .wrap header .header-wrap .bottom .btn.login {
     border: 0;
@@ -223,7 +223,7 @@
   }
   .container .wrap .nav-wrap ul li .depth-btn {
     font-size: 16px;
-    line-height: 74px;
+    line-height: 83px;
     padding-top: 0px;
     padding-right: 32px;
     padding-bottom: 0px;
@@ -239,7 +239,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     right: 8px;
-    top: 29px;
+    top: 33px;
     left: auto;
     bottom: auto;
   }
@@ -257,7 +257,7 @@
     margin-top: 0px;
   }
   .container .wrap section {
-    margin-top: 76px;
+    margin-top: 83px;
   }
   .container .wrap section article {
     display: flex;
@@ -275,6 +275,7 @@
     padding-bottom: 170px;
   }
   .container .wrap section article .vis-box {
+    width: 565px;
     padding: 0px;
     margin: 0px;
   }
@@ -302,6 +303,12 @@
     margin-top: 16px;
     text-align: left;
   }
+  .container .wrap section article.top {
+    padding-top: 130px;
+    padding-right: 40px;
+    padding-bottom: 130px;
+    padding-left: 40px;
+  }
   .container .wrap section article.top .cont .sub-tit {
     font-size: 20px;
     line-height: 24px;
@@ -314,27 +321,27 @@
     margin-top: 14px;
   }
   .container .wrap section article .inp {
-    width: 563px;
-    height: 65px;
+    width: 490px;
+    height: 60px;
     margin-top: 23px;
     border-radius: 8px;
     padding-left: 25px;
   }
   .container .wrap section article .inp input {
     font-size: 16px;
-    line-height: 63px;
+    line-height: 58px;
     width: 404px;
   }
   .container .wrap section article .inp label {
     font-size: 16px;
-    line-height: 52px;
+    line-height: 42px;
     width: 105px;
-    height: 52px;
+    height: 42px;
     border-radius: 8px;
-    margin-top: 6px;
-    margin-right: 8px;
-    margin-bottom: 6px;
-    margin-left: 8px;
+    margin-top: 8px;
+    margin-right: 9px;
+    margin-bottom: 8px;
+    margin-left: 9px;
   }
   .container .wrap section article ::placeholder {
     font-size: 16px;
@@ -392,7 +399,7 @@
     line-height: 52px;
   }
   .container .wrap section.main article.vis1 .vis-box {
-    width: 487px;
+    width: 530px;
     margin-top: 10px;
   }
   .container .wrap section.main article.vis2,
@@ -401,9 +408,9 @@
   }
   .container .wrap section.main article.vis2 .vis-box,
   .container .wrap section.main article.vis4 .vis-box {
-    width: 585px;
+    width: 564px;
     padding-top: 108px;
-    border-radius: 0 0 8px 204px;
+    border-radius: 0 0 8px 232px;
   }
   .container .wrap section.main article.vis2 .vis-box img,
   .container .wrap section.main article.vis4 .vis-box img {
@@ -413,8 +420,8 @@
   .container .wrap section.main article.vis4 .vis-box:after {
     content: '';
     display: block;
-    width: 585px;
-    height: 433px;
+    width: 564px;
+    height: 417px;
     border-radius: 215px 10px 10px 215px;
     background-color: #FF2C2C;
     position: absolute;
@@ -431,7 +438,7 @@
     box-sizing: border-box;
   }
   .container .wrap section.main article.vis3 .vis-box img {
-    width: 535px;
+    width: 530px;
   }
   .container .wrap section.main article.vis3 .vis-box:after {
     content: '';
@@ -483,7 +490,7 @@
   }
   .container .wrap section.biz article.top {
     overflow: visible;
-    padding-top: 120px;
+    padding-top: 80px;
     padding-right: 93px;
     padding-bottom: 0px;
     padding-left: 40px;
@@ -523,7 +530,7 @@
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
   }
   .container .wrap section.biz article.biz3 {
-    padding-top: 84px;
+    padding-top: 80px;
     padding-right: 40px;
     padding-bottom: 0px;
     padding-left: 100px;
@@ -591,10 +598,13 @@
     padding: 0px;
   }
   .container .wrap section.opt article.opt3 {
-    height: 330px;
+    height: 350px;
     flex-direction: row-reverse;
     align-items: start;
-    padding-top: 59px;
+    padding-top: 80px;
+    padding-right: 40px;
+    padding-bottom: 80px;
+    padding-left: 40px;
   }
   .container .wrap section.opt article.opt3:after {
     content: '';
@@ -632,9 +642,9 @@
     margin: 0px;
   }
   .container .wrap section.opt article.opt5 {
-    padding-top: 65px;
+    padding-top: 80px;
     padding-right: 40px;
-    padding-bottom: 65px;
+    padding-bottom: 80px;
     padding-left: 40px;
     flex-direction: row-reverse;
   }
@@ -660,7 +670,7 @@
     margin-top: 16px;
   }
   .container .wrap section.opt article.opt5 .vis-box {
-    width: 588px;
+    width: 565px;
     border-radius: 5px;
   }
   .container .wrap section.opt article.opt6 {
@@ -715,12 +725,12 @@
     margin-top: 50px;
   }
   .container .wrap section.ai article.top .cont .inp {
-    margin-top: 34px;
+    margin-top: 30px;
   }
   .container .wrap section.ai article.ai2 {
-    padding-top: 118px;
+    padding-top: 80px;
     padding-right: 40px;
-    padding-bottom: 118px;
+    padding-bottom: 80px;
     padding-left: 40px;
   }
   .container .wrap section.ai article.ai2:after {
@@ -748,22 +758,20 @@
     padding-left: 40px;
   }
   .container .wrap section.ai article.ai3 .vis-box {
-    width: 588px;
+    width: 565px;
     margin-top: 0px;
     border-radius: 5px;
   }
-  .container .wrap section.marketing {
-    padding-bottom: 0px;
-  }
   .container .wrap section.marketing article.top {
-    padding-top: 60px;
+    padding-top: 80px;
     padding-right: 40px;
     padding-bottom: 80px;
     padding-left: 40px;
   }
   .container .wrap section.marketing article.top .vis-box {
-    width: 564px;
+    width: 565px;
     height: auto;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
     border-radius: 15px;
   }
   .container .wrap section.marketing article.mar2 {
@@ -777,12 +785,19 @@
     margin-top: 0px;
   }
   .container .wrap section.marketing article.mar3 {
-    height: 610px;
-    padding-top: 0px;
+    height: auto;
+    padding-top: 80px;
+    padding-right: 40px;
+    padding-bottom: 80px;
+    padding-left: 40px;
     align-items: center;
   }
   .container .wrap section.marketing article.mar3 .cont {
     padding-top: 0px;
+  }
+  .container .wrap section.marketing article.mar3 .vis-box {
+    height: 480px;
+    margin-left: 100px;
   }
   .container .wrap section.sitemap article {
     padding-top: 80px;
@@ -792,7 +807,7 @@
     text-align: left;
   }
   .container .wrap section.sitemap article .vis-box {
-    width: 566px;
+    width: 565px;
     margin-top: 0px;
   }
   .container .wrap section.sitemap article.top {
@@ -803,7 +818,10 @@
   }
   .container .wrap section.sitemap article.site3 {
     flex-direction: row-reverse;
+    padding-top: 80px;
+    padding-right: 40px;
     padding-bottom: 80px;
+    padding-left: 40px;
   }
   .container .wrap section.sitemap article.site3:after {
     content: '';
@@ -826,6 +844,7 @@
     padding-left: 40px;
   }
   .container .wrap section.seo article .vis-box {
+    width: 565px;
     margin-top: 0px;
   }
   .container .wrap section.seo article.top {
@@ -861,9 +880,6 @@
     padding-bottom: 145px;
     padding-left: 40px;
   }
-  .container .wrap section.seo article.seo2 .vis-box {
-    width: 588px;
-  }
   .container .wrap section.seo article.seo3 {
     padding-top: 80px;
     height: 320px;
@@ -888,7 +904,6 @@
     width: 543px;
   }
   .container .wrap section.seo article.seo3 .vis-box {
-    width: 530px;
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.15);
     border-radius: 5px;
   }
@@ -897,9 +912,6 @@
     padding-right: 40px;
     padding-bottom: 150px;
     padding-left: 40px;
-  }
-  .container .wrap section.seo article.seo4 .vis-box {
-    width: 565px;
   }
   .container .wrap section.seo article.seo5 {
     flex-direction: row-reverse;
@@ -923,7 +935,6 @@
     z-index: -1;
   }
   .container .wrap section.seo article.seo5 .vis-box {
-    width: 563px;
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.15);
     border-radius: 10px;
   }
@@ -955,9 +966,9 @@
     width: 565px;
   }
   .container .wrap section.tag article.tag3 {
-    padding-top: 100px;
+    padding-top: 80px;
     padding-right: 40px;
-    padding-bottom: 60px;
+    padding-bottom: 80px;
     padding-left: 40px;
   }
   .container .wrap section.tag article.tag3:after {
@@ -993,7 +1004,7 @@
   }
   .container .wrap section.feed article.top {
     text-align: left;
-    padding-top: 75px;
+    padding-top: 120px;
     padding-right: 40px;
     padding-bottom: 0px;
     padding-left: 40px;
@@ -1341,6 +1352,8 @@
     padding-right: 29px;
   }
   .container .wrap footer .footer-inner .ft-bott .ft-bott-inner .lang .change-btn img {
+    width: 17px;
+    height: 18px;
     margin-right: 8px;
   }
   .container .wrap footer .footer-inner .ft-bott .ft-bott-inner .lang .change-btn:after {

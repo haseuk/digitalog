@@ -212,9 +212,9 @@ input {
 }
 .container .wrap section article {
   text-align: center;
-  padding-top: 6.51041667vw;
+  padding-top: 7.8125vw;
   padding-right: 5.20833333vw;
-  padding-bottom: 6.51041667vw;
+  padding-bottom: 7.8125vw;
   padding-left: 5.20833333vw;
   box-sizing: border-box;
   position: relative;
@@ -224,6 +224,7 @@ input {
   padding-bottom: 13.02083333vw;
 }
 .container .wrap section article .vis-box {
+  width: 80.72916667vw;
   padding-top: 10.41666667vw;
   padding-right: 4.42708333vw;
   padding-bottom: 10.41666667vw;
@@ -239,7 +240,7 @@ input {
 .container .wrap section article .cont {
   margin-top: 5.20833333vw;
   margin-right: 0vw;
-  margin-bottom: 3.90625vw;
+  margin-bottom: 5.20833333vw;
   margin-left: 0vw;
 }
 .container .wrap section article h3 {
@@ -262,12 +263,16 @@ input {
   word-break: keep-all;
 }
 .container .wrap section article.top {
+  padding-top: 16.92708333vw;
   text-align: center;
+}
+.container .wrap section article.top .cont:first-child {
+  margin-top: 0vw;
 }
 .container .wrap section article.top .cont .sub-tit {
   font-size: 3.64583333vw;
   line-height: 6.25vw;
-  margin-bottom: 2.08333333vw;
+  margin-bottom: 3.125vw;
   font-weight: 600;
 }
 .container .wrap section article.top .cont .txt {
@@ -349,8 +354,10 @@ input {
 .container .wrap section.main article .vis-box img {
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.15);
 }
+.container .wrap section.main article .cont {
+  margin-bottom: 0vw;
+}
 .container .wrap section.main article.vis1 {
-  padding-top: 13.02083333vw;
   position: relative;
 }
 .container .wrap section.main article.vis1 .vis-box {
@@ -389,9 +396,6 @@ input {
   padding-bottom: 15.625vw;
   padding-left: 5.20833333vw;
   margin-bottom: 0vw;
-}
-.container .wrap section.biz article.biz2 .vis-box {
-  width: 80.72916667vw;
 }
 .container .wrap section.biz article.biz3 {
   background-color: #FF2C2C;
@@ -448,7 +452,6 @@ input {
   background-color: #EEEEEE;
 }
 .container .wrap section.opt article.opt3 .vis-box {
-  width: 76.82291667vw;
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.15);
   padding: 0vw;
   border-radius: 1.30208333vw;
@@ -458,7 +461,6 @@ input {
   padding-top: 26.04166667vw;
 }
 .container .wrap section.opt article.opt4 .vis-box {
-  width: 80.72916667vw;
   padding: 0vw;
   border-radius: 1.30208333vw;
   margin-top: 10.41666667vw;
@@ -480,7 +482,6 @@ input {
   margin-top: 0vw;
 }
 .container .wrap section.opt article.opt5 .vis-box {
-  width: 82.29166667vw;
   padding: 0vw;
   border-radius: 1.30208333vw;
 }
@@ -488,7 +489,6 @@ input {
   margin-top: 7.8125vw;
 }
 .container .wrap section.opt article.opt6 .vis-box {
-  width: 82.29166667vw;
   margin-top: 7.8125vw;
   padding: 0vw;
   border-radius: 1.30208333vw;
@@ -543,7 +543,6 @@ input {
   padding-bottom: 10.41666667vw;
 }
 .container .wrap section.ai article.ai3 .vis-box {
-  width: 83.33333333vw;
   padding: 0vw;
   border-radius: 1.30208333vw;
 }
@@ -568,9 +567,6 @@ input {
 }
 .container .wrap section.marketing article.mar2 .vis-box {
   margin-top: 7.8125vw;
-}
-.container .wrap section.sitemap article {
-  padding-bottom: 10.41666667vw;
 }
 .container .wrap section.sitemap article .vis-box {
   padding: 0vw;
@@ -601,7 +597,7 @@ input {
   background-color: #FF2C2C;
   color: #fff;
   padding-top: 5.20833333vw;
-  height: 86.97916667vw;
+  height: 78.125vw;
 }
 .container .wrap section.seo article.seo3 .cont {
   margin-top: 0vw;
@@ -678,7 +674,6 @@ input {
   border-radius: 1.30208333vw;
 }
 .container .wrap section.pricing article ul li p.tit {
-  color: #24292F;
   font-weight: 700;
 }
 .container .wrap section.pricing article ul li p.price {
@@ -754,7 +749,6 @@ input {
 .container .wrap section.pricing article.top .price-type li p.period {
   font-size: 4.16666667vw;
   line-height: 6.25vw;
-  color: #717171;
   margin-bottom: 6.77083333vw;
 }
 .container .wrap section.pricing article.top .price-type li .scope {
@@ -764,7 +758,6 @@ input {
 .container .wrap section.pricing article.top .price-type li .scope p {
   font-size: 3.38541667vw;
   line-height: 4.16666667vw;
-  color: #111019;
   margin-bottom: 2.60416667vw;
   display: block;
   font-weight: 400;
@@ -879,7 +872,6 @@ input {
   font-size: 3.38541667vw;
   line-height: 9.11458333vw;
   font-weight: 600;
-  color: #24292F;
   vertical-align: middle;
 }
 .container .wrap section.pricing article.price1 .table ul li .grid-table ul li p.lines {
@@ -944,6 +936,8 @@ input {
   position: relative;
 }
 .container .wrap footer .lang .change-btn img {
+  width: 4.42708333vw;
+  height: 4.6875vw;
   margin-right: 2.08333333vw;
   vertical-align: middle;
 }
