@@ -10,7 +10,7 @@
   }
   .gray-line { .-a(#797979); .-box; }
   .inter { font-family: Inter, sans-serif; }
-  input { .-a; outline: none; background: none; }
+  input, textarea { font-family: SourceSansPro, sans-serif; .-a; outline: none; background: none; }
 
   .mo { .hide; }
   .web { .ib; }
@@ -369,6 +369,70 @@
             }
           }
         }
+        &.career {
+          article {
+            .arr-btn { .fs(22,52); .wh(212,52); .br(8);
+              img { .wh(24,24); .m(-5,0,0,10); }
+              &.jop-search { .mt(46); }
+            }
+            &.top { .bgc(#FFECEC); .p(60,40,180); overflow: visible; .reverse; .rel;
+              &:after { .cnt; .wh(100vw,700); .abs; .lt(50%,0); transform:translateX(-50%); .bgc(#FFECEC); .z(-1); }
+              &:before { .cnt; .wh(110vw,180); .bgc(#F8F8F8); .br-t(70%); .abs; .lb(50%,-100); transform: translateX(-50%); }
+              .vis-box { .p(0); .m(0,119,30,0); width:auto; box-shadow: none; .rel;
+                &:after { .cnt; .wh(728,374); .contain('../images/pc/career-bg.png'); .abs; .lt(-149,43); .ml(0); }
+                .vis { .wh(420,420); }
+                .job-circle { .wh(160,160); .pt(10); .rt(-57,279);
+                  b { .fs(78,88); }
+                  p { .fs(36,40); }
+                }
+              }
+              .cont { .tl;
+                h3 { .fs(64); }
+                .all { .mt(30); }
+              }
+            }
+            &.filter-wrap { .mt(0); .rel; .items-start;
+              &:after { .cnt; .wh(100vw,100%); .abs; .lt(50%,0); transform:translateX(-50%); .bgc(#F8F8F8); .z(-1); }
+              .filter {
+                h3 { .fs(42,42); .mb(26); }
+                .inp-box { .wh(368,72); .pl(25); .br(5); .mt(14);
+                  input { .fs(16); }
+                  ::placeholder { .fs(18); }
+                  .search-btn { .wh(49,72);
+                    &:after { .cnt; .wh(24,24); .contain('../images/pc/ico-search.png'); .lt(0,24); }
+                  }
+                }
+                .select-wrap { .wh(368,72); }
+                .jop-search { .w(368); }
+              }
+              .result { .mt(0); .w(664);
+                .result-status { .fs(20,52); .ls(0.15); }
+                .result-list { .mt(26);
+                  li { .br(15); .p(40); .mb(20);
+                    p { .fs(18,24); .mb(8);
+                      &.tit { .fs(24); }
+                      &.area, &.work { .pl(36);
+                        &:after { .cnt; .wh(24,24); }
+                      }
+                      &.area:after { .contain('../images/pc/ico-pos.png'); }
+                      &.work:after { .contain('../images/pc/ico-work.png'); }
+                      &.date { .fs(14); }
+                    }
+                    &:hover { .bgc(#FF2C2C);
+                      p { .c(#fff);
+                        &.area:after { .contain('../images/pc/ico-pos-wh.png'); }
+                        &.work:after { .contain('../images/pc/ico-work-wh.png'); }
+                      }
+                    }
+                  }
+                }
+                .paging { .wh(342,32); .mt(17);
+                  .btn { .fs(22,32); .wh(32,32); }
+                }
+              }
+            }
+          }
+        }
       }
 
       footer { .p(60,0);
@@ -404,23 +468,65 @@
                 .btn { .fs(16,32); .mr(20); }
               }
             }
-            .sns { .mt(0); .pt(8); .-box;
-              .btn { .mr(20);
-                &.tw { .wh(18,18); }
-                &.in { .wh(16,17); }
-                &.ig { .wh(17,18); }
-                &:last-child { .mr(0); }
-              }
+
+          }
+          .sns { .mt(0); .pt(8); .-box;
+            .btn { .mr(20);
+              &.tw { .wh(18,18); }
+              &.in { .wh(16,17); }
+              &.ig { .wh(17,18); }
+              &:last-child { .mr(0); }
             }
           }
           .copy { .fs(16,20); .mt(10); }
         }
+        &.career-footer {
+          .footer-inner {
+            .ft-cont { .flex; .space-between; }
+            .ft-top { .justify-start;
+              .tit { .fs(18,24); }
+              .sns { .m(0,0,0,30); .pt(4); }
+            }
+            .about { .mt(20);
+              p { .fs(14); }
+              .btn { .fs(14,20); .mt(12);
+              }
+            }
+            .equal { .fs(14,20); .mt(0); .w(566);
+              b { .fs(18); .mb(24); }
+            }
+            .ft-bott { .mt(116); }
+          }
+        }
+      }
+    }
+  }
+
+  .filter {
+    .select-wrap { .pl(25); .br(5); .mt(14);
+      &:after { .cnt; .wh(24,24); .rt(25,24); }
+      .select-box {
+        .select-btn { .fs(18,70); .wh(100%,70); }
+        .selected-list { .w(318);
+          .item { .fs(18,50); .p(0,44,0,15); .br(26); .m(0,2,2,0);
+            &:after { .cnt; .wh(24,24); .rt(15,14); }
+          }
+        }
+      }
+      .list { .p(10); .max-h(280);
+        &::-webkit-scrollbar { .w(5); background: transparent; }
+        &::-webkit-scrollbar-thumb { .br(5); .bgc(#e1e1e1); }
+        li { .fs(18,52); .mb(10); .pl(5); .rel; .z(1); .pointer; }
+      }
+      &.created {
+        .select-box { .p(10,0); }
       }
     }
   }
 
   .popup {
     .close { .wh(24,24); .contain('../images/mo/close.svg'); .fix; .rt(40,20); .z(10); }
+    .dim { .fix; .lt; .f; background: rgba(0,0,0,0.3); }
     .inner { .bgc(#fff); .p(30,20); .-box; }
 
     &.cookie { .wf; .bgc(#fff);
@@ -435,7 +541,6 @@
       }
     }
     &.lang-pop {
-      .dim { .fix; .lt; .f; background: rgba(0,0,0,0.3); }
       .inner { height:auto; .p(40); .crop; .tl; .abs; .lb(50%,20); transform: translateX(-50%); .br(6);
         .close { .r(20); }
         .title { .fs(20,20); .mb(8); }
@@ -449,5 +554,58 @@
         }
       }
     }
+
+    &.position { .abs; .lt;
+      .inner { .abs; .lt(50%,100); .w(996); .ml(-498); .p(50,69,56); .bgc(#fff); .rel; .br(30); .z(2);
+        .close { .wh(50,50); .contain('../images/pc/ico-close.png'); .abs; .rt(73,50); }
+        .title {
+          input { .fs(56,60); .c(#FF2C2C); .bold; .w(752); .keep-all; .ls(-0.02em);
+            &::placeholder { .c(#FF2C2C);}
+          }
+        }
+        .filter { .mt(30);
+          .select-wrap { .w(270); .min-h(74); .m(0,24,30,0); .ib; .vat; .rel;
+            &:nth-child(3n) { .mr(0); }
+            &.datepicker-inp { .pl(0);
+              input[name=datepicker] { .fs(18,72); .wh(100%,72); .pl(25); .-box; .br(5); }
+            }
+            input[name=datepicker][disabled] { .bgc(#EEEEEE); .c(#B7B7B7); }
+            .checker { .abs; .lb(0,-39);
+              input[type=checkbox] + i { .wh(24,24); .ib; .contain('../images/pc/ico-chk.png'); .vam; }
+              input[type=checkbox]:checked + i { .contain('../images/pc/ico-chkd.png'); }
+              input { .hide; }
+              s { .fs(16,24); .c(#000); .ml(10); .ib; .vam; }
+            }
+            .select-box .selected-list { .w(218); }
+            .list { .pl(30); .-box; .abs; .lb(-1,0); transform:translateY(100%); .w(270); .bgc(#fff); .-a(#717171); .br(5); .-box; .z(2); }
+          }
+        }
+        .textarea-wrap { .mt(30);
+          .t-inner { .mb(30);
+            .tit { .fs(24,40); .semi-bold; .pl(19); .-box; .rel; .mb(12);
+              &:after { .cnt; .wh(7,30); .bgc(#FF2C2C); .abs; .lt(0,5); }
+            }
+            textarea { .fs(18); .wh(860,230); .-a(#717171); .br(15); .p(20); .-box; overflow-y: auto; }
+          }
+        }
+        .confirm-wrap { .flex; .space-between;
+          input { .fs(18); .wh(540,80); .-a(#717171); .pl(25); .-box; .br(15); }
+          ::placeholder { .c(#C6C6C6); }
+          button { .fs(32,80); .tc; .c(#fff); .bgc(#FF2C2C); .wh(300,80); .br(15); }
+        }
+      }
+    }
   }
+}
+
+.daterangepicker { .l(50%)!important; right:auto!important; .ml(-50)!important;
+  &:after { left:auto!important; .r(31)!important; }
+  &:before { left:auto!important; .r(30)!important; }
+  .calendar-table { background-color: transparent!important; }
+  td.active { background-color: transparent!important; .rel;
+    &:before { .cnt; .wh(24,24); .abs; .lt(50%,50%); .bgc(#FF2C2C); .br(50%); transform: translate(-50%,-50%); .z(-1); }
+  }
+  td:hover { .bgc(#FFECEC)!important; }
+  td.in-range { .bgc(#FFECEC)!important; }
+  td.in-range.end-date { background-color: transparent!important; }
 }
